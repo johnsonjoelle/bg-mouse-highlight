@@ -1,0 +1,66 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+.bg-black,
+.bg-clouds {
+  background-size: cover;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  height: 100svh;
+  width: 100%;
+}
+.bg-clouds {
+  background-image: url(./images/felix-mittermeier-L4-16dmZ-1c-unsplash.jpg);
+}
+.bg-black {
+  --mouseX: 450px;
+  --mouseY: 1px;
+  background-image: radial-gradient(
+    circle at var(--mouseX) var(--mouseY),
+    /* transparent 0%, */
+    #00000090 0%,
+    #00000098 3%,
+    #000 15%,
+    #000 100%
+  );
+  opacity: .95;
+}
+
+.content {
+  color: rgb(41, 41, 41);
+}
+
+.accreditation {
+  color: rgb(155, 155, 155);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.accreditation a {
+  color: rgb(107, 24, 107);
+}
+
+/* #mouse-shadow {
+  position: absolute;
+  width: min(20vw, 600px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-image: radial-gradient(
+    circle at center,
+    #A845A250 0,
+    transparent 80%,
+    transparent 100%
+  );
+} */
